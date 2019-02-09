@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.MagicLeap;
 
 public class AllFeelsOSCReceiver : MonoBehaviour {
 
@@ -21,7 +20,6 @@ public class AllFeelsOSCReceiver : MonoBehaviour {
         osc.SetAddressHandler("/glove", receiveGlove);
 
         osc.SetAddressHandler("/rod", rodMove);
-        MLPrivileges.Start();
 
         ring.maxAngularVelocity = .4f;
     }
